@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Company Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rooms</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Rental</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="admin-section">
+        <!-- Rooms list table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Room No</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Price</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Room list data -->
+            </tbody>
+        </table>
+        <!-- Rented rooms details table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Rented Room ID</th>
+                    <th>Rent Date</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rented rooms data -->
+            </tbody>
+        </table>
+        <!-- Customer management section -->
+        <div id="customer-management">
+            <!-- Customer details -->
+            <div id="customer-details">
+                <h2>Customer Details</h2>
+                <img src="customer.jpg" alt="Customer">
+                <p>Name: John Doe</p>
+                <p>Address: 123 Main St</p>
+                <p>Phone: 555-1234</p>
+                <p>Password: ********</p>
+            </div>
+            <!-- Edit form -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <!-- More fields -->
+                <button type="submit">Save</button>
+                <button type="button" onclick="deleteCustomer()">Delete</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <img src="assests/Belgium.jpg" alt="Logo" id="logo">
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

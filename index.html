@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div id="login-form">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="login()">Login</button>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+       /* styles/login.css */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 1em;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.input-group input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.btn {
+    padding: 10px;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.hide {
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box" id="loginBox">
+            <h2>User Login</h2>
+            <form action="/login" method="post" id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="register-link">Don't have an account? <a href="#" onclick="showRegisterForm()">Register here</a>.</p>
+            </form>
+        </div>
+
+        <div class="register-box hide" id="registration">
+            <h2>User Registration</h2>
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="reg_username">Username:</label>
+                    <input type="text" id="reg_username" name="reg_username" required>
+                </div>
+                <div class="input-group">
+                    <label for="reg_password">Password:</label>
+                    <input type="password" id="reg_password" name="reg_password" required>
+                </div>
+                <button type="button" class="btn" onclick="register()">Register</button>
+                <p class="login-link">Already have an account? <a href="#" onclick="showLoginForm()">Login here</a>.</p>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        function showRegisterForm() {
+            document.getElementById("loginBox").classList.add('hide');
+            document.getElementById("registration").classList.remove('hide');
+        }
+    
+        function showLoginForm() {
+            document.getElementById("registration").classList.add('hide');
+            document.getElementById("loginBox").classList.remove('hide');
+        }
+    
+        function register() {
+            var username = document.getElementById("reg_username").value || "user"; // Default username "user"
+            var password = document.getElementById("reg_password").value || "password"; // Default password "password"
+            var formData = new FormData();
+            formData.append('username', username);
+            formData.append('password', password);
+    
+            // For demonstration purposes, redirect to dashboard page immediately
+            window.location.href = 'dashboard.html'; // Change this to the dashboard URL
+        }
+    
+        // Function to handle login
+        function login() {
+            // Placeholder authentication logic
+            var username = document.getElementById("username").value || "user"; // Default username "user"
+            var password = document.getElementById("password").value || "password"; // Default password "password"
+    
+            // Placeholder check for valid credentials
+            // You can replace this with your actual authentication logic
+            if (username === "user" && password === "password") {
+                // If credentials are valid, store username in session storage
+                sessionStorage.setItem("username", username);
+                // Redirect to the dashboard
+                window.location.href = "./dashboard.html";
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        }
+    </script>
+     -->
+
+    
+</body>
+</html>
+
+
+

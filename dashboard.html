@@ -1,0 +1,294 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="username"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="rooms-section"> -->
+        <!--  Room pictures and status -->
+
+        <!-- <div class="room"> -->
+            <!-- Room picture -->
+            <!-- <img src="room1.jpg" alt="Room 1"> -->
+            <!-- Room status -->
+            <!-- <p>Status: Available</p>
+        </div> -->
+        <!-- Room table -->
+        <!-- <table>
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Price</th>
+                    <th>Location</th>
+                    <th>Status</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>$100</td>
+                    <td>City Center</td>
+                    <td>Available</td>
+                    <td><input type="checkbox"></td>
+                </tr> -->
+                <!-- More rooms -->
+            <!-- </tbody>
+        </table> -->
+        <!-- Booking form -->
+        <!-- <form>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">Book</button>
+        </form>
+    </div>
+
+    <footer>
+        <img src="./assests/Belgium.jpg" alt="Logo" id="logo">
+    </footer>
+    
+
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Welcome, <span id="username"></span></h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                
+                
+                <li><a href="index.html" onclick="logout()">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Buttons for Add or Rent -->
+    <div>
+        <button onclick="showAddRoomForm()">Add a Room</button>
+        <button onclick="showRoomListings()">Rent a Room</button>
+    </div>
+</div>
+
+<div id="rooms-section">
+    <!-- Add Room Form (Initially Hidden) -->
+    <div id="addRoomForm" style="display:none;">
+        <!-- Form to add a room -->
+        <form>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location">
+            <!-- Input field for price -->
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" min="0">
+            <!-- Input field for uploading pictures -->
+            <label for="pictures">Pictures:</label>
+            <input type="file" id="pictures" name="pictures" accept="image/*" multiple>
+            <!-- Add more fields as needed -->
+            <button type="submit">Add Room</button>
+        </form>
+    </div>
+</div>
+
+
+
+        <!-- Room listings (Initially Shown) -->
+        <div id="roomListings">
+            <!-- Room pictures and status -->
+            <div class="room">
+                <!-- Room picture -->
+                <img src="assests/aiv8556-2-scaled-1-1920x1282.jpeg" alt="Room 1">
+                <!-- Room status -->
+                <p>Status: Available</p>
+            </div>
+            <!-- Room table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>395</td>
+                        <td>City Center</td>
+                        <td>Available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- More rooms -->
+                </tbody>
+            </table>
+
+
+            <div class="room">
+                <!-- Room picture -->
+                <img src="assests/images.jpg" alt="Room 1">
+                <!-- Room status -->
+                <p>Status: Available</p>
+            </div>
+            <!-- Room table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>102</td>
+                        <td>375</td>
+                        <td>City Center</td>
+                        <td>Available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- More rooms -->
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+            <div class="room">
+                <!-- Room picture -->
+                <img src="assests/QpMZqeQWM_720.jpg" alt="Room 1">
+                <!-- Room status -->
+                <p>Status: Available</p>
+            </div>
+            <!-- Room table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>103</td>
+                        <td>420</td>
+                        <td>City Center</td>
+                        <td>Available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- More rooms -->
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+            <div class="room">
+                <!-- Room picture -->
+                <img src="assests/room.jpg" alt="Room 1">
+                <!-- Room status -->
+                <p>Status: Available</p>
+            </div>
+            <!-- Room table -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Room Number</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                        <th>Status</th>
+                        <th>Select</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>104</td>
+                        <td>410</td>
+                        <td>City Center</td>
+                        <td>Available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                    <!-- More rooms -->
+                </tbody>
+            </table>
+
+
+
+
+
+
+
+
+            <!-- Booking form -->
+            <form>
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date">
+                <button type="submit">Book</button>
+            </form>
+        </div>
+
+        
+
+    <footer>
+        <img src="assests/Belgium.jpg" alt="Logo" id="logo">
+    </footer>
+    
+
+    <script src="js/dashboard.js"></script>
+
+    <script>
+        function showAddRoomForm() {
+            document.getElementById("addRoomForm").style.display = "block";
+            document.getElementById("roomListings").style.display = "none";
+        }
+
+        function showRoomListings() {
+            document.getElementById("addRoomForm").style.display = "none";
+            document.getElementById("roomListings").style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
+
